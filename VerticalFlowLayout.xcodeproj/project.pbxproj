@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		A86BA6D12809A18F000535FA /* VerticalFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = A86BA6D02809A18F000535FA /* VerticalFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A86BA6DE280D4272000535FA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A86BA6DD280D4272000535FA /* README.md */; };
+		A86BA6E0280D4276000535FA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A86BA6DF280D4276000535FA /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A86BA6CD2809A18F000535FA /* VerticalFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VerticalFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86BA6D02809A18F000535FA /* VerticalFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerticalFlowLayout.h; sourceTree = "<group>"; };
+		A86BA6DD280D4272000535FA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A86BA6DF280D4276000535FA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 		A86BA6C32809A18F000535FA = {
 			isa = PBXGroup;
 			children = (
+				A86BA6DD280D4272000535FA /* README.md */,
+				A86BA6DF280D4276000535FA /* LICENSE */,
 				A86BA6CF2809A18F000535FA /* VerticalFlowLayout */,
 				A86BA6CE2809A18F000535FA /* Products */,
 			);
@@ -119,6 +125,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86BA6E0280D4276000535FA /* LICENSE in Resources */,
+				A86BA6DE280D4272000535FA /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

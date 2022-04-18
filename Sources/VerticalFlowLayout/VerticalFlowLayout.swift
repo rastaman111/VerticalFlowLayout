@@ -1,3 +1,3 @@
 struct VerticalFlowLayout {
-    var text = "Hello, World!"
+    var text = "Hello, World! Varsion 0.0.2"
 }
