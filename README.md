@@ -28,6 +28,7 @@ This implementation is built using a `UICollectionView` and a custom flowLayout.
   * [Installation](#installation)
      - [CocoaPods](#cocoapods)
      - [Swift Package Manager](#swift-package-manager)
+     - [Carthage](#carthage)
      - [Manually](#manually)
   * [Usage](#usage)
   * [License](#license)
@@ -54,6 +55,12 @@ $ pod install
 
 ### Swift Package Manager
 In Xcode, use File > Swift Packages > Add Package Dependency and use `https://github.com/rastaman111/VerticalFlowLayout`.
+
+### Carthage
+To install with [Carthage](https://github.com/Carthage/Carthage), simply add the following line to your Podfile:
+```ruby
+github "rastaman111/VerticalFlowLayout"
+```
 
 ### Manually
 If you prefer not to use any of dependency managers, you can integrate manually. Put `Sources/VerticalFlowLayout` folder in your Xcode project. Make sure to enable `Copy items if needed` and `Create groups`.
