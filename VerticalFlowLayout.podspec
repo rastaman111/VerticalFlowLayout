@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "VerticalFlowLayout"
   s.version      = "0.0.3"
-  s.summary      = "Tinder UI built with UICollectionView in Swift."
+  s.summary      = "This implementation is built using a UICollectionView and a custom flowLayout in Swift."
   s.homepage     = "https://github.com/rastaman111/VerticalFlowLayout"
   s.source       = { :git => "https://github.com/rastaman111/VerticalFlowLayout.git", :tag => s.version }
   s.license      = { :type => "MIT", :file => "LICENSE" }
