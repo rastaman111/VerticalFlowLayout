@@ -55,6 +55,40 @@ In Xcode, use File > Swift Packages > Add Package Dependency and use `https://gi
 If you prefer not to use any of dependency managers, you can integrate manually. Put `Sources/VerticalFlowLayout` folder in your Xcode project. Make sure to enable `Copy items if needed` and `Create groups`.
 
 ## Usage
+To use `VerticalFlowLayout` inside your `UIViewController`:
+
+```swift
+import VerticalFlowLayout
+
+class ViewController: UIViewController, VerticalCollectionViewDelegate, VerticalCollectionViewDataSource {
+    
+    @IBOutlet var verticalView: VerticalView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        verticalView.delegate = self
+        verticalView.datasource = self
+        
+        // register cell
+        verticalView.register(nib: UINib(nibName: "ExampleCell", bundle: nil), forCellWithReuseIdentifier: "ExampleCell")
+    }
+    
+    func cellForItemIn(verticalCollectionView: VerticalCollectionView, cellForItemAt indexPath: Int) -> UICollectionViewCell {
+        let cardCell = verticalCollectionView.dequeueReusableCell(withReuseIdentifier: "ExampleCell", for: indexPath) as! ExampleCell
+       
+        return cardCell
+    }
+    
+     func numberOfItemsIn(verticalCollectionView: VerticalCollectionView) -> Int {
+        return 20
+    }
+    
+    func didSelectCell(verticalCollectionView: VerticalCollectionView, indexPath: Int) {
+        // Called when the user clicks on a cell.
+    }
+}
+```
 
 ## License
 VerticalFlowLayout is available under the MIT license. See the LICENSE file for more info.
