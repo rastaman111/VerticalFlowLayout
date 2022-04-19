@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "VerticalFlowLayout"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Tinder UI built with UICollectionView in Swift."
   s.homepage     = "https://github.com/rastaman111/VerticalFlowLayout"
   s.source       = { :git => "https://github.com/rastaman111/VerticalFlowLayout.git", :tag => s.version }
