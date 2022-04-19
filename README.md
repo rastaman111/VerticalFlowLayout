@@ -5,7 +5,10 @@ This implementation is built using a `UICollectionView` and a custom flowLayout.
 <a href="https://github.com/rastaman111/VerticalFlowLayout">
     <img src="https://img.shields.io/cocoapods/v/VerticalFlowLayout.svg?style=flat"  alt="cocoapods version">
 </a>
-    
+<a href="https://github.com/Carthage/Carthage">
+    <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"  alt="Carthage compatible">
+</a>   
+
 <a href="https://github.com/rastaman111/VerticalFlowLayout/blob/master/LICENSE">
     <img alt="GitHub" src="https://img.shields.io/github/license/rastaman111/VerticalFlowLayout.svg">
 </a>
