@@ -18,6 +18,10 @@ This implementation is built using a `UICollectionView` and a custom flowLayout.
     <img src="https://img.shields.io/badge/swift-5.0-brightgreen.svg" alt="swift5.0">
 </a>
 
+<div>
+  <img src="./Replay.gif" alt="Replay" width="250">
+</div>
+
 # Table of contents
 
   * [Requirements](#requirements)
@@ -75,9 +79,9 @@ class ViewController: UIViewController, VerticalCollectionViewDelegate, Vertical
     }
     
     func cellForItemIn(verticalCollectionView: VerticalCollectionView, cellForItemAt indexPath: Int) -> UICollectionViewCell {
-        let cardCell = verticalCollectionView.dequeueReusableCell(withReuseIdentifier: "ExampleCell", for: indexPath) as! ExampleCell
+        let cell = verticalCollectionView.dequeueReusableCell(withReuseIdentifier: "ExampleCell", for: indexPath) as! ExampleCell
        
-        return cardCell
+        return cell
     }
     
      func numberOfItemsIn(verticalCollectionView: VerticalCollectionView) -> Int {
