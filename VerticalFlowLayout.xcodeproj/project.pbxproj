@@ -10,6 +10,11 @@
 		A86BA6D12809A18F000535FA /* VerticalFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = A86BA6D02809A18F000535FA /* VerticalFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A86BA6DE280D4272000535FA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A86BA6DD280D4272000535FA /* README.md */; };
 		A86BA6E0280D4276000535FA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A86BA6DF280D4276000535FA /* LICENSE */; };
+		A86BA708280EB1BC000535FA /* VerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86BA703280EB1BC000535FA /* VerticalView.swift */; };
+		A86BA709280EB1BC000535FA /* VerticalCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86BA704280EB1BC000535FA /* VerticalCollectionViewDataSource.swift */; };
+		A86BA70A280EB1BC000535FA /* VerticalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86BA705280EB1BC000535FA /* VerticalCollectionView.swift */; };
+		A86BA70B280EB1BC000535FA /* VerticalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86BA706280EB1BC000535FA /* VerticalFlowLayout.swift */; };
+		A86BA70C280EB1BC000535FA /* VerticalCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86BA707280EB1BC000535FA /* VerticalCollectionViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +22,11 @@
 		A86BA6D02809A18F000535FA /* VerticalFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerticalFlowLayout.h; sourceTree = "<group>"; };
 		A86BA6DD280D4272000535FA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A86BA6DF280D4276000535FA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A86BA703280EB1BC000535FA /* VerticalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalView.swift; sourceTree = "<group>"; };
+		A86BA704280EB1BC000535FA /* VerticalCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		A86BA705280EB1BC000535FA /* VerticalCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalCollectionView.swift; sourceTree = "<group>"; };
+		A86BA706280EB1BC000535FA /* VerticalFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalFlowLayout.swift; sourceTree = "<group>"; };
+		A86BA707280EB1BC000535FA /* VerticalCollectionViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalCollectionViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,7 @@
 			children = (
 				A86BA6DD280D4272000535FA /* README.md */,
 				A86BA6DF280D4276000535FA /* LICENSE */,
+				A86BA701280EB1BC000535FA /* Sources */,
 				A86BA6CF2809A18F000535FA /* VerticalFlowLayout */,
 				A86BA6CE2809A18F000535FA /* Products */,
 			);
@@ -52,6 +63,26 @@
 			isa = PBXGroup;
 			children = (
 				A86BA6D02809A18F000535FA /* VerticalFlowLayout.h */,
+			);
+			path = VerticalFlowLayout;
+			sourceTree = "<group>";
+		};
+		A86BA701280EB1BC000535FA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A86BA702280EB1BC000535FA /* VerticalFlowLayout */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A86BA702280EB1BC000535FA /* VerticalFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A86BA703280EB1BC000535FA /* VerticalView.swift */,
+				A86BA704280EB1BC000535FA /* VerticalCollectionViewDataSource.swift */,
+				A86BA705280EB1BC000535FA /* VerticalCollectionView.swift */,
+				A86BA706280EB1BC000535FA /* VerticalFlowLayout.swift */,
+				A86BA707280EB1BC000535FA /* VerticalCollectionViewDelegate.swift */,
 			);
 			path = VerticalFlowLayout;
 			sourceTree = "<group>";
@@ -137,6 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86BA70C280EB1BC000535FA /* VerticalCollectionViewDelegate.swift in Sources */,
+				A86BA70A280EB1BC000535FA /* VerticalCollectionView.swift in Sources */,
+				A86BA708280EB1BC000535FA /* VerticalView.swift in Sources */,
+				A86BA709280EB1BC000535FA /* VerticalCollectionViewDataSource.swift in Sources */,
+				A86BA70B280EB1BC000535FA /* VerticalFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

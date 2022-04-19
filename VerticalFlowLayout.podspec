@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "VerticalFlowLayout"
-  s.version      = "0.0.3.1"
+  s.version      = "0.1"
   s.summary      = "This implementation is built using a UICollectionView and a custom flowLayout in Swift."
   s.homepage     = "https://github.com/rastaman111/VerticalFlowLayout"
   s.source       = { :git => "https://github.com/rastaman111/VerticalFlowLayout.git", :tag => s.version }
