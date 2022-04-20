@@ -154,6 +154,25 @@ public class VerticalView: UIView {
     public func cellForItem(at index: Int) -> UICollectionViewCell? {
         return self.verticalCollectionView.cellForItem(at: convertIndexToIndexPath(for: index))
     }
+    
+    /// Reloads all of the data for the VerticalCollectionView.
+    public func reloadData() {
+        self.verticalCollectionView.reloadData()
+    }
+
+    /// Scrolls the collection view contents until the specified item is visible.
+    public func scrollToCell(at index: Int, animated: Bool) -> Bool {
+        guard
+            let cellHeight = flowLayout.cellHeight,
+            index >= 0,
+            index < verticalCollectionView.numberOfItems(inSection: 0)
+            else { return false }
+        let y = CGFloat(index) * (cellHeight + flowLayout.minimumLineSpacing) - topInset
+        let point = CGPoint(x: verticalCollectionView.contentOffset.x, y: y)
+        self.verticalCollectionView.setContentOffset(point, animated: animated)
+        
+        return true
+    }
 
     private func setupInit() {
         self.setupVerticalCollectionView()
@@ -218,25 +237,6 @@ extension VerticalView: UICollectionViewDelegate {
 
 extension VerticalView: UICollectionViewDataSource {
 
-    /// Reloads all of the data for the VerticalCollectionView.
-    public func reloadData() {
-        verticalCollectionView.reloadData()
-    }
-
-    /// Scrolls the collection view contents until the specified item is visible.
-    public func scrollToCell(at index: Int, animated: Bool) -> Bool {
-        guard
-            let cellHeight = flowLayout.cellHeight,
-            index >= 0,
-            index < verticalCollectionView.numberOfItems(inSection: 0)
-            else { return false }
-        let y = CGFloat(index) * (cellHeight + flowLayout.minimumLineSpacing) - topInset
-        let point = CGPoint(x: verticalCollectionView.contentOffset.x, y: y)
-        verticalCollectionView.setContentOffset(point, animated: animated)
-        
-        return true
-    }
-
     public func register(_ cellClass: AnyClass?, forCellWithReuseIdentifier identifier: String) {
         self.verticalCollectionView.register(cellClass, forCellWithReuseIdentifier: identifier)
     }
@@ -275,8 +275,8 @@ extension VerticalView: UICollectionViewDelegateFlowLayout {
 
         let xInsets = sideInset * 2
         let yInsets = cellSpacing + visibleNextCellHeight + topInset
-        let cellWidth = verticalCollectionView.frame.size.width - xInsets
-        let cellHeight = verticalCollectionView.frame.size.height - yInsets
+        let cellWidth = self.verticalCollectionView.frame.size.width - xInsets
+        let cellHeight = self.verticalCollectionView.frame.size.height - yInsets
         
         return CGSize(width: cellWidth, height: cellHeight)
     }

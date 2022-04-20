@@ -34,6 +34,7 @@ This implementation is built using a `UICollectionView` and a custom flowLayout.
      - [Carthage](#carthage)
      - [Manually](#manually)
   * [Usage](#usage)
+  * [Additionally](#additionally)
   * [License](#license)
   * [Donation](#donation)
 
@@ -102,6 +103,50 @@ class ViewController: UIViewController, VerticalCollectionViewDelegate, Vertical
         // Called when the user clicks on a cell.
     }
 }
+```
+## Additionally
+
+### Get current cell
+
+The currently focussed cell index
+
+```swift
+verticalView.focussedCellIndex
+```
+### Get a cell at a specified index
+
+Returns the visible cell object at the specified index.
+
+```swift
+verticalView.cellForItem(at index: Int) -> UICollectionViewCell?
+```
+### Scroll to a specifc cell 
+
+Scrolls the collection view contents until the specified item is visible
+
+```swift
+verticalView.scrollToCell(at: Int, animated: Bool) -> Bool
+```
+### Moving cell
+
+Moves an item from one location to another in the collection view.
+
+```swift
+verticalView.moveCell(at: Int, to: Int)
+```
+### Deleting cells
+
+Deletes cells at the specified indexes
+
+```swift
+verticalView.deleteCells(at: [Int])
+```
+### Inserting cells
+
+Inserts new cells at the specified indexes
+
+```swift
+verticalView.insertCells(at: [Int])
 ```
 
 ## License
